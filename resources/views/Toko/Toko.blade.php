@@ -8,10 +8,11 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body>
+<body class="font-sans antialiased">
+    <div class="min-h-screen bg-gray-100">
     <div class="navbar bg-base-100">
         <div class="flex-1">
-          <a class="btn btn-ghost normal-case text-xl">Nama Toko</a>
+          <a class="btn btn-ghost normal-case text-xl">{{ $namatoko }}</a>
         </div>
         <div class="flex-none">
           <div class="dropdown dropdown-end">
@@ -60,9 +61,6 @@
                     Product name
                 </th>
                 <th scope="col" class="px-6 py-3">
-                    Color
-                </th>
-                <th scope="col" class="px-6 py-3">
                     Category
                 </th>
                 <th scope="col" class="px-6 py-3">
@@ -78,19 +76,17 @@
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     Apple MacBook Pro 17"
                 </th>
-                <td class="px-6 py-4">
-                    Silver
-                </td>
+
                 <td class="px-6 py-4">
                     Laptop
                 </td>
                 <td class="px-6 py-4">
                     $2999
                 </td>
-                <td class="px-0 py-4">
+                <td>
                     <button class="btn w-20 rounded-full">Edit</button>
                 </td>
-                <td class="px-0 py-2">
+                <td>
                     <button class="btn w-17 rounded-full">delete</button>
                 </td>
             </tr>
@@ -98,35 +94,45 @@
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     Microsoft Surface Pro
                 </th>
-                <td class="px-6 py-4">
-                    White
-                </td>
+
                 <td class="px-6 py-4">
                     Laptop PC
                 </td>
                 <td class="px-6 py-4">
                     $1999
                 </td>
+                <td>
+                    <button class="btn w-20 rounded-full">Edit</button>
+                </td>
+                <td>
+                    <button class="btn w-17 rounded-full">delete</button>
+                </td>
+
             </tr>
             <tr class="bg-white dark:bg-gray-800">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     Magic Mouse 2
                 </th>
-                <td class="px-6 py-4">
-                    Black
-                </td>
+
                 <td class="px-6 py-4">
                     Accessories
                 </td>
                 <td class="px-6 py-4">
                     $99
                 </td>
+                <td>
+                    <button class="btn w-20 rounded-full">Edit</button>
+                </td>
+                <td>
+                    <button class="btn w-17 rounded-full">delete</button>
+                </td>
+
             </tr>
         </tbody>
     </table>
 </div>
 
 
-
+    </div>
 </body>
 </html>
