@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class TokoController extends Controller
 {
@@ -11,7 +12,7 @@ class TokoController extends Controller
      */
     public function index()
     {
-        print("hello Toko Kontroller");
+        return view('Toko.Toko');
     }
 
     /**
