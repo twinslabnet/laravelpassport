@@ -12,7 +12,10 @@ class TokoController extends Controller
      */
     public function index()
     {
-        return view('Toko.Toko');
+        return view('Toko.Toko',[
+            'namatoko' => fake()->company(),
+            
+        ]);
     }
 
     /**
@@ -20,7 +23,7 @@ class TokoController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -28,7 +31,7 @@ class TokoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -36,7 +39,7 @@ class TokoController extends Controller
      */
     public function show(string $id)
     {
-        //
+        
     }
 
     /**
@@ -44,7 +47,7 @@ class TokoController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        
     }
 
     /**
@@ -52,7 +55,7 @@ class TokoController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        
     }
 
     /**
@@ -60,6 +63,6 @@ class TokoController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        
     }
 }
